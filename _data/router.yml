@@ -1,0 +1,14 @@
+pt:
+  home: "home"
+  property: "quinta"
+  gallery: "galeria"
+  activities: "actividades"
+  location: "localizacao"
+  bookings: "reservas"
+en:
+  home: "home"
+  property: "property"
+  gallery: "gallery"
+  activities: "activities"
+  location: "location"
+  bookings: "bookings"

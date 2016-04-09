@@ -1,0 +1,16 @@
+@mixin cta() {
+	font-family: $font-family-secondary;
+	text-transform: uppercase;
+	
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&--active {
+		font-weight: bold;
+	}
+}
+
+.cta {
+	@include cta;	
+}

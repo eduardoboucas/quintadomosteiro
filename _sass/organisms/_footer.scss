@@ -1,0 +1,33 @@
+.footer {
+	position: relative;
+	background-color: whitesmoke;
+	padding: 30px 20px;
+	font-size: 12px;
+	height: $footer-height;
+}
+
+.footer__contact {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.footer__contact-part {
+	display: block;
+
+	& + & {
+		margin-top: 8px;
+	}
+}
+
+.footer__social {
+	display: inline-block;
+	position: absolute;
+	top: ($footer-height / 2) - 25px;
+	right: 20px;
+}
+
+.footer__social-icon {
+	width: 42px;
+	height: 42px;
+	fill: $colour-secondary;
+}

@@ -1,0 +1,11 @@
+.icon {
+	transition: fill 0.1s ease-in-out;
+}
+
+.icon--facebook:hover {
+	fill: $colour-facebook;
+}
+
+.icon--instagram:hover {
+	fill: $colour-instagram;
+}

@@ -1,38 +1,12 @@
-<footer class="site-footer">
+<footer class="footer">
+	<div class="footer__contact">
+		<address class="footer__contact-part">Lugar do Mosteiro, Bravães<br>4980-125 Ponte da Barca<br>Portugal</address>
+		<span class="footer__contact-part">Tel: +351 123 456 789</span>
+		<span class="footer__contact-part">Email: mail@quintadomosteiro.com</span>
+	</div>
 
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
-
-  </div>
-
+	<div class="footer__social">
+		<a href="#">{% include svg.html id="facebook" class="footer__social-icon icon icon--facebook" %}</a>
+		<a href="#">{% include svg.html id="instagram" class="footer__social-icon icon icon--instagram" %}</a>
+	</div>
 </footer>
