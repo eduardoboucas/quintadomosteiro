@@ -1,16 +1,35 @@
 .nav {
-	margin-top: 20px;
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 0.3s ease-in-out;
+	text-align: center;
+
+	.nav-toggle:checked ~ .header & {
+		max-height: 2000px;
+		max-height: 100vh;
+	}
+
+	@include media('>=medium') {
+		margin-top: 20px;
+		max-height: none;
+	}
 }
 
 .nav__item {
-	display: inline-block;
-	margin: 0 10px;
-	font-size: 14px;
-	border-bottom: 1px solid transparent;
-
+	display: block;
+	font-size: 25px;
+	margin: 20px 0;
+	
 	&:hover {
 		text-decoration: none;
 		border-bottom-color: currentColor;
+	}
+
+	@include media('>=medium') {
+		display: inline-block;
+		margin: 0 10px;
+		font-size: 14px;
+		border-bottom: 1px solid transparent;
 	}
 }
 

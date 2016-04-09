@@ -15,6 +15,10 @@ window.main = (function ($) {
 		}, function () {
 			stopAllVideos();
 		});
+
+		$('.js-map-container').one('click', function () {
+			$(this).removeClass('map-container--block-scroll');
+		});
 	}
 
 	function autoplayFirstVideo() {

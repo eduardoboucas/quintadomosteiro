@@ -8,9 +8,8 @@
 
 		{% include menu.html %}
 
-		<div class="header__language-selector">
-			<a class="cta {% if page.lang == "pt" %}cta--active{% endif %} header__language" href="/pt/{{ site.data.router.pt[page.pageId] }}">Português</a>
-			<a class="cta {% if page.lang == "en" %}cta--active{% endif %} header__language" href="/en/{{ site.data.router.en[page.pageId] }}">English</a>
-		</div>
+		<label for="nav-toggle" class="header__burger-wrapper">
+			<button class="header__burger burger">Menu</button>
+		</label>
 	</header>
 </header>

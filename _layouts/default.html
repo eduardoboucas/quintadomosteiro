@@ -4,11 +4,13 @@
 
   <body>
     <main class="main">
-    	{% include header.html %}
-      	
-      	{{ content }}
+      <input type="checkbox" class="nav-toggle" id="nav-toggle">
+    	
+      {% include header.html %}
+      
+      {{ content }}
 
-      	<div class="footer-push"></div>
+      <div class="footer-push"></div>
     </main>
 
     {% include footer.html %}

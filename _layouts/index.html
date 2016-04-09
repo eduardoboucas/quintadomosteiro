@@ -5,17 +5,35 @@ layout: default
 	<img src="/assets/images/lead2.jpg" class="container__tenant">
 </div>
 
+{% for menuItem in site.data[page.lang].menu %}
+	{% if menuItem.link == "property" %}
+		{% assign property = menuItem.title %}
+	{% endif %}
+
+	{% if menuItem.link == "gallery" %}
+		{% assign gallery = menuItem.title %}
+	{% endif %}
+
+	{% if menuItem.link == "activities" %}
+		{% assign activities = menuItem.title %}
+	{% endif %}
+
+	{% if menuItem.link == "location" %}
+		{% assign location = menuItem.title %}
+	{% endif %}
+{% endfor %}
+
 <div class="col-container">
 	<a href="#" class="col col--2-2 col--1-2@medium">
-		{% include homepage-tile.html video="/assets/videos/a-quinta-final.mp4" title="A Quinta" %}
+		{% include homepage-tile.html video="/assets/videos/a-quinta-final.mp4" title=property %}
 	</a>
 	<a href="#" class="col col--2-2 col--1-2@medium">
-		{% include homepage-tile.html video="/assets/videos/galeria-final.mp4" title="Galeria" %}
+		{% include homepage-tile.html video="/assets/videos/galeria-final.mp4" title=gallery %}
 	</a>
 	<a href="#" class="col col--2-2 col--1-2@medium">
-		{% include homepage-tile.html video="/assets/videos/actividades-final.mp4" title="Actividades" %}
+		{% include homepage-tile.html video="/assets/videos/actividades-final.mp4" title=activities %}
 	</a>
 	<a href="#" class="col col--2-2 col--1-2@medium">
-		{% include homepage-tile.html video="/assets/videos/localizacao-final.mp4" title="Localização" %}
+		{% include homepage-tile.html video="/assets/videos/localizacao-final.mp4" title=location %}
 	</a>
 </div>

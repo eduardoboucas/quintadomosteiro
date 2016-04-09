@@ -4,6 +4,10 @@
 	overflow: hidden;
 }
 
+.container--16-9 {
+	padding-bottom: (9 / 16) * 100%;
+}
+
 .container--20-11 {
 	padding-bottom: (11 / 20) * 100%;
 }
