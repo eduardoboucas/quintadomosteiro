@@ -2,8 +2,6 @@
 // Typography
 // --------------------------------------------------------------
 
-@import url(//fast.fonts.net/cssapi/63ea3477-bb00-453a-82b2-41c89450bf09.css);
-
 $font-family-primary: 'AvenirNextLTW01-Regular', sans-serif;
 $font-family-secondary: 'DIN Condensed W01 Light', Helvetica, Arial, sans-serif;
 
@@ -16,3 +14,15 @@ $font-size-normal: 18px;
 $font-size-large: 23px;
 
 $line-height-normal: 1.5;
+
+@font-face {
+	font-family: "AvenirNextLTW01-Regular";
+	src:url("/assets/fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix");
+	src:url("/assets/fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix") format("eot"),url("/assets/fonts/2cd55546-ec00-4af9-aeca-4a3cd186da53.woff2") format("woff2"),url("/assets/fonts/1e9892c0-6927-4412-9874-1b82801ba47a.woff") format("woff"),url("/assets/fonts/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf") format("truetype"),url("/assets/fonts/52a192b1-bea5-4b48-879f-107f009b666f.svg#52a192b1-bea5-4b48-879f-107f009b666f") format("svg");
+}
+
+@font-face {
+	font-family: "DIN Condensed W01 Light";
+	src:url("/assets/fonts/a95cf8c0-e960-48ac-bcee-4487e8197e9f.eot?#iefix");
+	src:url("/assets/fonts/a95cf8c0-e960-48ac-bcee-4487e8197e9f.eot?#iefix") format("eot"),url("/assets/fonts/4e27b36d-615c-41eb-baf6-a3095eb585f5.woff2") format("woff2"),url("/assets/fonts/9805cfa5-519d-4bfb-82af-f6e07c275f94.woff") format("woff"),url("/assets/fonts/9c9f20da-4166-40b2-83e9-3a7202885946.ttf") format("truetype"),url("/assets/fonts/8d7ff012-8139-4d9d-a07e-64e1476dce2d.svg#8d7ff012-8139-4d9d-a07e-64e1476dce2d") format("svg");
+}
