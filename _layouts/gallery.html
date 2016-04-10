@@ -4,7 +4,7 @@ scripts:
   - "/assets/js/flickity.pkgd.min.js"
 ---
 
-<div class="gallery js-flickity" data-flickity-options='{ "imagesLoaded": true, "percentPosition": false, "lazyLoad": 2, "pageDots": false }'>
+<div class="gallery js-flickity" data-flickity-options='{ "imagesLoaded": true, "percentPosition": false, "lazyLoad": 2, "pageDots": false, "setGallerySize": false }'>
 	{% for image in site.data.gallery.images %}
 		<img class="gallery__image" data-flickity-lazyload="{{ site.cdn_url }}/assets/images/gallery/{{ image }}"/>
 	{% endfor %}

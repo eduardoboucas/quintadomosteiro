@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="container container--454-219">
-	<img src="/assets/images/lead2.jpg" class="container__tenant">
+	<img src="{{ site.cdn_url }}/assets/images/lead2.jpg" class="container__tenant">
 </div>
 
 {% for menuItem in site.data[page.lang].menu %}
@@ -24,16 +24,18 @@ layout: default
 {% endfor %}
 
 <div class="col-container">
-	<a href="#" class="col col--2-2 col--1-2@medium">
-		{% include homepage-tile.html video="/assets/videos/a-quinta-final.mp4" title=property %}
+	<a href="/{{ page.lang }}/property" class="col col--2-2 col--1-2@medium">
+		{% include homepage-tile.html video="/assets/videos/a-quinta-final.mp4" cover="/assets/images/property-still.png" title=property %}
 	</a>
-	<a href="#" class="col col--2-2 col--1-2@medium">
-		{% include homepage-tile.html video="/assets/videos/galeria-final.mp4" title=gallery %}
+	<a href="/{{ page.lang }}/gallery" class="col col--2-2 col--1-2@medium">
+		{% include homepage-tile.html video="/assets/videos/galeria-final.mp4" cover="/assets/images/gallery-still.png" title=gallery %}
 	</a>
-	<a href="#" class="col col--2-2 col--1-2@medium">
-		{% include homepage-tile.html video="/assets/videos/actividades-final.mp4" title=region %}
+	<a href="/{{ page.lang }}/region" class="col col--2-2 col--1-2@medium">
+		{% include homepage-tile.html video="/assets/videos/actividades-final.mp4" cover="/assets/images/region-still.png" title=region %}
 	</a>
-	<a href="#" class="col col--2-2 col--1-2@medium">
-		{% include homepage-tile.html video="/assets/videos/localizacao-final.mp4" title=location %}
+	<a href="/{{ page.lang }}/location" class="col col--2-2 col--1-2@medium">
+		{% include homepage-tile.html video="/assets/videos/localizacao-final.mp4" cover="/assets/images/location-still.png" title=location %}
 	</a>
 </div>
+
+{% include bookings-banner.html %}

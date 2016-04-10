@@ -7,7 +7,7 @@
 }
 
 .homepage-tile__video::-webkit-media-controls {
-    //display: none !important;
+    display: none !important;
 }
 
 .homepage-tile__overlay {
@@ -20,7 +20,8 @@
 	opacity: 0;
 	transition: opacity 0.4s ease-in-out;
 
-	.homepage-tile:hover & {
+	.homepage-tile:hover &,
+	html.touchevents & {
 		opacity: 1;
 	}
 }
@@ -38,7 +39,8 @@
     opacity: 0;
     transition: opacity 0.4s ease-in-out 0.2s;
 
-    .homepage-tile:hover & {
+    .homepage-tile:hover &,
+	html.touchevents & {
     	opacity: 1;
     }
 }

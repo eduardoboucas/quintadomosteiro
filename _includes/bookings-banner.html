@@ -1,0 +1,30 @@
+{% assign selectedNumberOfNights = 2 %}
+
+<section class="constrain bookings-banner">
+	<h2 class="heading heading--2">{% include svg.html id="calendar" class="bookings-banner__icon" %} Check availability</h2>
+
+	<label class="label">
+		<span class="label__text">Date</span>
+		<input type="date" class="text-field" name="date" placeholder="Select">
+	</label>
+
+	<label class="label">
+		<span class="label__text">Nights</span>
+		<select class="dropdown" name="nights">
+			{% for i in (1..20) %}
+				<option value="{{ i }}"{% if i == selectedNumberOfNights %} selected="selected"{% endif %}>{{ i }}</option>
+			{% endfor %}
+		</select>
+	</label>
+
+	<label class="label">
+		<span class="label__text">Adults</span>
+		<select class="dropdown" name="adults">
+			{% for i in (1..10) %}
+				<option value="{{ i }}"{% if i == selectedNumberOfNights %} selected="selected"{% endif %}>{{ i }}</option>
+			{% endfor %}
+		</select>
+	</label>
+
+	<input type="submit" class="submit-button submit-button--block" value="Submit">
+</section>

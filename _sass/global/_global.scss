@@ -13,13 +13,19 @@ $breakpoints: (
 // --------------------------------------------------------------
 
 $layout-max-width: 1200px;
-$layout-side-padding: 10px;
+$layout-side-padding: 30px;
+$layout-side-padding-mobile: 15px;
 
 @mixin constrain() {
     max-width: $layout-max-width + (2 * $layout-side-padding);
-    padding-left: $layout-side-padding;
-    padding-right: $layout-side-padding;
-    margin: 0 auto;        
+    padding-left: $layout-side-padding-mobile;
+    padding-right: $layout-side-padding-mobile;
+    margin: 0 auto;
+
+    @include media('>=medium') {
+        padding-left: $layout-side-padding;
+        padding-right: $layout-side-padding;        
+    }
 }
 
 .constrain {
