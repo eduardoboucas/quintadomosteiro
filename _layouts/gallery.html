@@ -3,8 +3,9 @@ layout: page
 scripts:
   - "/assets/js/flickity.pkgd.min.js"
 ---
+
 <div class="gallery js-flickity" data-flickity-options='{ "imagesLoaded": true, "percentPosition": false, "lazyLoad": 2, "pageDots": false }'>
-  <img class="gallery__image" data-flickity-lazyload="http://lorempixel.com/1024/768/city/1/"/>
-  <img class="gallery__image" data-flickity-lazyload="http://lorempixel.com/1024/768/city/2/"/>
-  <img class="gallery__image" data-flickity-lazyload="http://lorempixel.com/1024/768/city/3/"/>
+	{% for image in site.data.gallery.images %}
+		<img class="gallery__image" data-flickity-lazyload="{{ site.cdn_url }}/assets/images/gallery/{{ image }}"/>
+	{% endfor %}
 </div>

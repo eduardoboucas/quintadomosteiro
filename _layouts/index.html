@@ -14,8 +14,8 @@ layout: default
 		{% assign gallery = menuItem.title %}
 	{% endif %}
 
-	{% if menuItem.link == "activities" %}
-		{% assign activities = menuItem.title %}
+	{% if menuItem.link == "region" %}
+		{% assign region = menuItem.title %}
 	{% endif %}
 
 	{% if menuItem.link == "location" %}
@@ -31,7 +31,7 @@ layout: default
 		{% include homepage-tile.html video="/assets/videos/galeria-final.mp4" title=gallery %}
 	</a>
 	<a href="#" class="col col--2-2 col--1-2@medium">
-		{% include homepage-tile.html video="/assets/videos/actividades-final.mp4" title=activities %}
+		{% include homepage-tile.html video="/assets/videos/actividades-final.mp4" title=region %}
 	</a>
 	<a href="#" class="col col--2-2 col--1-2@medium">
 		{% include homepage-tile.html video="/assets/videos/localizacao-final.mp4" title=location %}

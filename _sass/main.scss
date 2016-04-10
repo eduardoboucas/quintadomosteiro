@@ -34,6 +34,7 @@
 @import 'atoms/burger';
 @import 'atoms/container';
 @import 'atoms/cta';
+@import 'atoms/heading';
 @import 'atoms/icon';
 @import 'atoms/loading-wheel';
 @import 'atoms/map';
@@ -63,3 +64,5 @@
 // Pages
 // --------------------------------------------------------------
 
+@import 'pages/gallery-page';
+@import 'pages/location-page';

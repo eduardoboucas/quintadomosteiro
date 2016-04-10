@@ -1,5 +1,3 @@
-$map-header-height: 46px;
-
 .map-container {
 	overflow: hidden;
 	padding-bottom: 100%;
@@ -17,12 +15,4 @@ $map-header-height: 46px;
 	@include media('>=medium') {
 		padding-bottom: 35%;
 	}
-}
-
-.map {
-	position: relative;
-	top: -$map-header-height;
-	width: 100%;
-	height: 100%;
-	height: calc(100% + #{$map-header-height});
 }

@@ -1,0 +1,23 @@
+directionsTitle: "Directions to"
+links:
+  - 
+    icon: "airplane"
+    title: "Francisco Sá Carneiro Airport, Porto"
+    link: "https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d382416.43699326186!2d-8.887489826130887!3d41.51232661229782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m12!3e6!4m5!1s0xd246f64614a2bad%3A0x151a578a6d6039d1!2sFrancisco+S%C3%A1+Carneiro+Airport%2C+4470-558+Maia%2C+Portugal!3m2!1d41.2421186!2d-8.6785514!4m4!2s41.79753%2C-8.45245!3m2!1d41.797529999999995!2d-8.452449999999999!5e0!3m2!1sen!2suk!4v1460281247783"
+
+  -
+    icon: "compass"
+    title: "Tourist Office, Ponte da Barca"
+    link: "https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d11896.779451485732!2d-8.444959277364926!3d41.80256246601848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m12!3e0!4m5!1s0xd2508e024da9247%3A0x712716d03a8e758!2sRua+Conselheiro+Rocha+Peixoto+9%2C+4980-626+Ponte+da+Barca%2C+Portugal!3m2!1d41.8084251!2d-8.4202719!4m4!2s41.797349%2C+-8.452409!3m2!1d41.797349!2d-8.452409!5e0!3m2!1sen!2suk!4v1460282744776"
+
+  -
+    title: "Viana do Castelo"
+    link: "https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d190519.24550115925!2d-8.786780927167952!3d41.74504325855029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m12!3e6!4m4!2s41.797349%2C+-8.452409!3m2!1d41.797349!2d-8.452409!4m5!1s0xd25b7cef6e86a73%3A0xfe4d167e5dd21dfd!2sViana+do+Castelo%2C+Portugal!3m2!1d41.691827499999995!2d-8.8344101!5e0!3m2!1sen!2suk!4v1460283141132"
+
+  -
+    title: "Braga"
+    link: "https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d190745.5587380163!2d-8.626969089745888!3d41.668717884829185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m12!3e6!4m4!2s41.797349%2C+-8.452409!3m2!1d41.797349!2d-8.452409!4m5!1s0xd24feb0f0dd4701%3A0x400ebbde4902f90!2sBraga%2C+Portugal!3m2!1d41.5454714!2d-8.4265071!5e0!3m2!1sen!2suk!4v1460283189017"
+
+  -
+    title: "Peneda-Gerês National Park"
+    link: "https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d95151.81203197842!2d-8.41706917356788!3d41.817656922574756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m12!3e6!4m4!2s41.797349%2C+-8.452409!3m2!1d41.797349!2d-8.452409!4m5!1s0xd256917fd47c523%3A0x6d193b91beb28db6!2sParque+Nacional+Peneda-Ger%C3%AAs%2C+Ponte+da+Barca%2C+Portugal!3m2!1d41.8386561!2d-8.241590799999999!5e0!3m2!1sen!2suk!4v1460283271370"  

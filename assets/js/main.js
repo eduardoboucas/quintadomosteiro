@@ -2,6 +2,7 @@ window.main = (function ($) {
 	var videosInteraction = false;
 	var $homepageTiles = $('.js-homepage-tile');
 	var $videos = $('.js-homepage-video');
+	var $map = $('.js-map');
 
 	function init() {
 		bindUiEvents();
@@ -18,6 +19,10 @@ window.main = (function ($) {
 
 		$('.js-map-container').one('click', function () {
 			$(this).removeClass('map-container--block-scroll');
+		});
+
+		$('.js-map-link').click(function () {
+			$map.attr('src', $(this).attr('data-src'));
 		});
 	}
 
