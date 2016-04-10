@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<div class="container container--454-219">
+	<img src="{{ site.cdn_url }}/assets/images/lead2.jpg" class="container__tenant">
+</div>
+
+{% for menuItem in site.data[page.lang].menu %}
+	{% if menuItem.link == "property" %}
+		{% assign property = menuItem.title %}
+	{% endif %}
+
+	{% if menuItem.link == "gallery" %}
+		{% assign gallery = menuItem.title %}
+	{% endif %}
+
+	{% if menuItem.link == "region" %}
+		{% assign region = menuItem.title %}
+	{% endif %}
+
+	{% if menuItem.link == "location" %}
+		{% assign location = menuItem.title %}
+	{% endif %}
+{% endfor %}
+
+<div class="col-container">
+	<a href="/{{ page.lang }}/property" class="col col--2-2 col--1-2@medium">
+		{% include homepage-tile.html video="/assets/videos/a-quinta-final.mp4" cover="/assets/images/property-still.png" title=property %}
+	</a>
+	<a href="/{{ page.lang }}/gallery" class="col col--2-2 col--1-2@medium">
+		{% include homepage-tile.html video="/assets/videos/galeria-final.mp4" cover="/assets/images/gallery-still.png" title=gallery %}
+	</a>
+	<a href="/{{ page.lang }}/region" class="col col--2-2 col--1-2@medium">
+		{% include homepage-tile.html video="/assets/videos/actividades-final.mp4" cover="/assets/images/region-still.png" title=region %}
+	</a>
+	<a href="/{{ page.lang }}/location" class="col col--2-2 col--1-2@medium">
+		{% include homepage-tile.html video="/assets/videos/localizacao-final.mp4" cover="/assets/images/location-still.png" title=location %}
+	</a>
+</div>
+
+{% include bookings-banner.html %}

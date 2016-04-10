@@ -1,0 +1,63 @@
+// --------------------------------------------------------------
+// Burger menu icon
+// --------------------------------------------------------------
+
+$burger-width: 24px;
+$burger-thickness: 3px;
+$burger-gap: 4px;
+
+.burger {
+  border: 0;
+  background: none;
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+  font-size: 0;
+  line-height: 0;
+  border-bottom: $burger-thickness solid currentColor;
+  width: $burger-width;
+  transition: border-bottom 1s ease-in-out;
+
+  // Fix for extra space in Firefox
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  } 
+
+  &:before {
+    content: "";
+    display: block;
+    border-bottom: $burger-thickness solid currentColor;
+    width: 100%;
+    margin-bottom: $burger-gap;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    border-bottom: $burger-thickness solid currentColor;
+    width: 100%;
+    margin-bottom: $burger-gap;
+    transition: transform 0.5s ease-in-out;
+  }
+}
+
+.nav-toggle:checked ~ .header .burger {
+  border-bottom: $burger-thickness solid transparent;
+  transition: border-bottom 0.2s ease-in-out;
+
+  &:before {
+    transform: translateY(7px) translateX(-1px) rotate(-45deg);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  &:after {
+    transform: translateY(0px) translateX(0px) rotate(45deg);
+    transition: transform 0.5s ease-in-out;
+  }
+}
+
+.nav-toggle {
+  display: none;
+}

@@ -1,0 +1,28 @@
+---
+layout: page
+---
+<div class="js-map-container map-container map-container--block-scroll container loading-wheel">
+	<iframe name="map" class="js-map container__tenant map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.428442435106!2d-8.45464404944162!3d41.797529979126736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDQ3JzUxLjEiTiA4wrAyNycwOC44Ilc!5e0!3m2!1sen!2suk!4v1460281734304"></iframe>
+</div>
+
+<div class="constrain">
+	<h2 class="heading heading--2">{{ site.data[page.lang].location.directionsTitle }}:</h1>
+
+	<ul class="location-page__links">
+		<li class="location-page__link-wrapper">
+			{% for mapLink in site.data[page.lang].location.links %}
+				{% if mapLink.icon %}
+					{% assign iconId = mapLink.icon %}
+				{% else %}
+					{% assign iconId = "map-pin" %}
+				{% endif %}
+
+				<a class="location-page__link" href="{{ mapLink.link }}" target="map">
+					{% include svg.html id=iconId class="location-page__location-icon" %}
+
+					<span class="link">{{ mapLink.title }}</span>
+				</a>
+			{% endfor %}			
+		</li>
+	</ul>
+</h2>

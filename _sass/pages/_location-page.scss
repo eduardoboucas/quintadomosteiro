@@ -1,0 +1,22 @@
+.location-page {
+	
+}
+
+.location-page__link {
+	display: block;
+	margin: 10px 0;
+}
+
+.location-page__location-icon {
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+	opacity: 0.3;
+	transition: opacity 0.3s ease-in-out;
+
+	.location-page__link:hover & {
+		opacity: 0.8;
+	}
+}

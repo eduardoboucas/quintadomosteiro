@@ -1,0 +1,8 @@
+.text-field {
+	@include form-element;
+	
+	padding: 15px;
+	-webkit-appearance: none;
+	-webkit-min-logical-width: 150px;
+	-webkit-min-logical-height: 55px;
+}
