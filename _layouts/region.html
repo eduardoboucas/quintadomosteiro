@@ -1,4 +1,28 @@
 ---
 layout: page
 ---
-<p>Activities!</p>
+<div class="js-tabs tabs">
+	<ul class="tabs__nav js-tablist">
+		{% for item in site.data[page.lang].region %}
+			<li class="tabs__item js-tablist__item">
+				<a href="#{{ item.id }}" id="label_{{ item.id }}" class="tabs__link js-tablist__link">{{ item.name }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+	
+	{% for item in site.data[page.lang].region %}
+		<div id="{{ item.id }}" class="tabs__panel js-tabcontent content-holder" aria-hidden="true">
+   			{% if item.image %}
+          <img src="{{ item.image }}">
+        {% endif %}
+
+        {% if item.imageCaption %}
+          <figcaption>{{ item.imageCaption | markdownify }}</figcaption>
+        {% endif %}
+        
+        {% if item.text %}
+   				{{ item.text | markdownify }}
+   			{% endif %}
+ 		</div>
+	{% endfor %}
+</div>

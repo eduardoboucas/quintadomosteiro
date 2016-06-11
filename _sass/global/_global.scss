@@ -55,3 +55,7 @@ $footer-height: 170px;
 .footer-push {
     height: $footer-height;
 }
+
+[aria-hidden=true] {
+    display: none;
+}
