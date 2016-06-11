@@ -24,18 +24,16 @@ layout: default
 {% endfor %}
 
 <div class="col-container">
-	<a href="/{{ page.lang }}/property" class="col col--2-2 col--1-2@medium">
+	<a href="/{{ page.lang }}/property" class="col col--1-2">
 		{% include homepage-tile.html video="/assets/videos/a-quinta-final.mp4" cover="/assets/images/property-still.png" title=property %}
 	</a>
-	<a href="/{{ page.lang }}/gallery" class="col col--2-2 col--1-2@medium">
+	<a href="/{{ page.lang }}/gallery" class="col col--1-2">
 		{% include homepage-tile.html video="/assets/videos/galeria-final.mp4" cover="/assets/images/gallery-still.png" title=gallery %}
 	</a>
-	<a href="/{{ page.lang }}/region" class="col col--2-2 col--1-2@medium">
+	<a href="/{{ page.lang }}/region" class="col col--1-2">
 		{% include homepage-tile.html video="/assets/videos/actividades-final.mp4" cover="/assets/images/region-still.png" title=region %}
 	</a>
-	<a href="/{{ page.lang }}/location" class="col col--2-2 col--1-2@medium">
+	<a href="/{{ page.lang }}/location" class="col col--1-2">
 		{% include homepage-tile.html video="/assets/videos/localizacao-final.mp4" cover="/assets/images/location-still.png" title=location %}
 	</a>
 </div>
-
-{% include bookings-banner.html %}
