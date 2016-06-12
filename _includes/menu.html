@@ -4,7 +4,7 @@
 	{% endfor %}
 
 	<div class="header__language-selector">
-		<a class="cta {% if page.lang == "pt" %}cta--active{% endif %} header__language" href="{% if site.default_lang != "pt" %}/pt{% endif %}/{{ page.pageId }}">Português</a>
-		<a class="cta {% if page.lang == "en" %}cta--active{% endif %} header__language" href="{% if site.default_lang != "en" %}/en{% endif %}/{{ page.pageId }}">English</a>
+		<a class="cta {% if page.lang == "pt" %}cta--active{% endif %} header__language" href="{% if site.default_lang != "pt" or page.pageId != "index" %}/pt{% endif %}/{{ page.pageId }}">Português</a>
+		<a class="cta {% if page.lang == "en" %}cta--active{% endif %} header__language" href="{% if site.default_lang != "en" or page.pageId != "index" %}/en{% endif %}/{{ page.pageId }}">English</a>
 	</div>
 </div>
