@@ -1,10 +1,9 @@
-title: "Quinta do Mosteiro - Ponte da Barca, Portugal"
+title: "Quinta do Mosteiro"
 email: mail@quintadomosteiro.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description:
+    pt: "Quinta de charme para aluguer, localizada em Ponte da Barca, Portugal"
+    en: "Boutique property for rental, located in Ponte da Barca, Portugal"
 baseurl: ""
-url: "http://quintadomosteiro.com"
+url: "https://quintadomosteiro.com"
 cdn_url: ""
 markdown: kramdown
