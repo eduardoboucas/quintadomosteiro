@@ -7,3 +7,4 @@ baseurl: ""
 url: "https://quintadomosteiro.com"
 cdn_url: ""
 markdown: kramdown
+default_lang: pt
