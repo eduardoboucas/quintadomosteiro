@@ -69,3 +69,13 @@
 .content-holder {
 	@include content-holder;
 }
+
+.content-holder--dropped-cap {
+	>p:first-of-type:first-letter {
+		font-size: 75px;
+		float: left; 
+    	font-family: Georgia; 
+    	line-height: 70px; 
+    	padding: 3px 8px 0 3px;
+	}
+}
