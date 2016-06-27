@@ -1,7 +1,11 @@
+@mixin page-margin() {
+	margin-top: 40px;
+}
+
 .page {
 	padding-bottom: 30px;
 }
 
 .page--margin {
-	margin-top: 40px;
+	@include page-margin;
 }

@@ -1,0 +1,27 @@
+.property-page {
+	@include constrain;
+	@include page-margin;
+
+	max-width: 760px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.property-page__image {
+	$image-shape: circle(183px at 50.3% 50%);
+
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+	width: 350px;
+	border-radius: 50%;
+	
+	@include media('>=medium') {
+		display: inline;
+		margin: 0;
+		float: right;
+		shape-outside: #{$image-shape};
+		-webkit-shape-outside: #{$image-shape};
+	}
+}
