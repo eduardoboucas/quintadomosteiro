@@ -8,3 +8,7 @@ url: "https://quintadomosteiro.com"
 cdn_url: ""
 markdown: kramdown
 default_lang: pt
+
+kramdown:
+  input: GFM
+  syntax_highlighter: null
