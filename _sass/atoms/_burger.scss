@@ -30,6 +30,7 @@ $burger-gap: 4px;
     border-bottom: $burger-thickness solid currentColor;
     width: 100%;
     margin-bottom: $burger-gap;
+    -webkit-transition: transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out;
   }
 
@@ -39,6 +40,7 @@ $burger-gap: 4px;
     border-bottom: $burger-thickness solid currentColor;
     width: 100%;
     margin-bottom: $burger-gap;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out;
   }
 }
@@ -48,12 +50,16 @@ $burger-gap: 4px;
   transition: border-bottom 0.2s ease-in-out;
 
   &:before {
+    -webkit-transform: translateY(7px) translateX(-1px) rotate(-45deg);
     transform: translateY(7px) translateX(-1px) rotate(-45deg);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out;
   }
 
   &:after {
+    -webkit-transform: translateY(0px) translateX(0px) rotate(45deg);
     transform: translateY(0px) translateX(0px) rotate(45deg);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out;
   }
 }
