@@ -1,25 +1,73 @@
-ground-floor: >
-  - 2 x double bedroom with private bathroom
-
-  - Reception/game room with fireplace
-
-  - Lounge
-
-  - Kitchen
-
-  - Restroom
-
-first-floor: >
-  - 1 x double bedroom with private bathroom
-
-  - 1 x double bedroom
-
-  - 1 x twin room (2 single beds)
-
-  - Bathroom
-
-  - Living room with fireplace
-
-  - Dining room with fireplace
+ground-floor:
+  title: "Ground floor"
+  features: >
+    - 2 x double bedroom with private bathroom
   
-  - Terrace
+    - Reception/game room with fireplace
+  
+    - Lounge
+  
+    - Kitchen
+  
+    - Restroom
+
+first-floor:
+  title: "First floor"
+  features: >
+    - 1 x double bedroom with private bathroom
+  
+    - 1 x double bedroom
+  
+    - 1 x twin room (2 single beds)
+  
+    - Bathroom
+  
+    - Living/dining room with fireplace
+  
+    - Kitchen
+  
+    - Terrace
+
+full-house:
+  title: "Full house"
+  features: >
+    - 3 x double bedroom with private bathroom
+
+    - 1 x double bedroom
+
+    - 1 x twin room (2 single beds)
+
+    - Reception/game room with fireplace
+
+    - Lounge
+
+    - 2 x Kitchen
+
+    - 2 x Bathroom
+
+    - Living/dining room with fireplace
+
+    - Main dining room with fireplace
+
+    - Terrace
+
+shared: >
+  - Swimming pool
+  
+  - Gardens
+  
+  - Rustic bar
+  
+  - Outdoor barbeque
+  
+  - Air-conditioning and central heating
+  
+  - Cable television (with international channels)
+  
+  - Wi-Fi
+  
+  - Car park
+
+i18n:
+  night: "night"
+  price: "Price"

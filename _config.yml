@@ -12,3 +12,8 @@ default_lang: pt
 kramdown:
   input: GFM
   syntax_highlighter: null
+
+# Serving
+detach:  false
+port:    4100
+host:    0.0.0.0

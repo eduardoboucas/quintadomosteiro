@@ -1,25 +1,73 @@
-ground-floor: >
-  - 2 x quarto duplo com casa de banho
-
-  - Salão de jogos com lareira
-
-  - Lounge
-
-  - Cozinha
-
-  - Casa de banho
-
-first-floor: >
-  - 1 x quarto duplo com casa de banho
-
-  - 1 x quarto duplo
-
-  - 1 x quarto twin (2 camas single)
-
-  - Casa de banho
-
-  - Sala de estar com lareira
-
-  - Sala de jantar com lareira
+ground-floor:
+  title: "Rés-do-chão"
+  features: >
+    - 2 x quarto duplo com casa de banho
   
-  - Terraço exterior
+    - Salão de jogos com lareira
+  
+    - Lounge
+  
+    - Cozinha
+  
+    - Casa de banho
+
+first-floor:
+  title: "Primeiro piso"
+  features: >
+    - 1 x quarto duplo com casa de banho
+  
+    - 1 x quarto duplo
+  
+    - 1 x quarto twin (2 camas single)
+  
+    - Casa de banho
+  
+    - Sala de estar com lareira
+  
+    - Cozinha
+  
+    - Terraço exterior
+
+full-house:
+  title: "Casa completa"
+  features: >
+    - 3 x quarto duplo com casa de banho
+  
+    - 1 x quarto duplo
+  
+    - 1 x quarto twin (2 camas single)
+  
+    - Salão de jogos com lareira
+  
+    - Lounge
+  
+    - 2 x cozinha
+  
+    - 2 x casa de banho
+  
+    - Sala de estar/jantar com lareira
+  
+    - Sala de jantar principal com lareira  
+  
+    - Terraço exterior
+
+shared: >
+  - Piscina
+
+  - Jardim relvado
+
+  - Bar rústico
+
+  - Barbecue ao ar livre
+
+  - Ar-condicionado e aquecimento central
+
+  - Televisão por cabo
+
+  - Wi-Fi
+
+  - Parque automóvel
+
+i18n:
+  night: "noite"
+  price: "Preço"

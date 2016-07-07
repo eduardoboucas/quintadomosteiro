@@ -1,0 +1,10 @@
+<div class="booking-type-card">
+	<img src="/assets/images/house-illustration-{{ include.type }}.png">
+	<h2 class="heading heading--2">{{ site.data[page.lang].house-layout[include.type].title }}</h2>
+
+	<div class="booking-type-card__features">
+		{{ site.data[page.lang].house-layout[include.type].features | markdownify }}
+	</div>
+
+	<p>{{ site.data[page.lang].house-layout.i18n.price }}: €{{ include.price }} / {{ site.data[page.lang].house-layout.i18n.night }}</p>
+</div>

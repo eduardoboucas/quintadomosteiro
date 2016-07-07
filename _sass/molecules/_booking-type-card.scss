@@ -1,0 +1,21 @@
+.booking-type-card {
+	@include constrain(760px);
+
+	padding-bottom: 40px;
+	border-bottom: 1px solid #ddd;
+	margin-top: 40px;
+}
+
+.booking-type-card + .booking-type-card {
+	
+	
+}
+
+.booking-type-card__features {
+	@include media('>=medium') {
+		> ul {
+			column-count: 2;
+			-webkit-column-count: 2;
+		}		
+	}
+}

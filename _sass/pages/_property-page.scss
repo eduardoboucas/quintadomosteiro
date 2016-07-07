@@ -25,3 +25,12 @@
 		-webkit-shape-outside: #{$image-shape};
 	}
 }
+
+.property-page__content {
+	img {
+		@include media('>=medium') {
+			float: left;
+			margin-right: 30px;
+		}
+	}
+}
