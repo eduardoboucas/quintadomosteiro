@@ -98,6 +98,14 @@
 	}
 }
 
+.header__burger-label {
+    position: relative;
+    top: 7px;
+    font-size: 14px;
+    text-transform: uppercase;
+    left: -25px;	
+}
+
 .header__burger {
 	position: absolute;
 	display: inline-block;

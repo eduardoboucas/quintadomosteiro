@@ -22,17 +22,21 @@
 	
 	&:hover {
 		text-decoration: none;
-		border-bottom-color: currentColor;
+		font-weight: bold;
 	}
 
 	@include media('>=medium') {
 		display: inline-block;
 		margin: 0 10px;
 		font-size: 14px;
-		border-bottom: 1px solid transparent;
 	}
 }
 
 .nav__item-active {
 	font-weight: bold;
+
+	@include media('>=medium') {
+		font-weight: normal;
+		border-bottom: 1px solid currentColor;
+	}
 }

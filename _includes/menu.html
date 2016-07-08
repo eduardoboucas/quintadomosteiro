@@ -1,6 +1,6 @@
 <div class="nav">
 	{% for menuItem in site.data[page.lang].menu %}
-		<a class="nav__item cta {% if menuItem.link == page.pageId %}cta--active{% endif %}" href="/{{ page.lang }}/{{ menuItem.link }}">{{ menuItem.title }}</a>
+		<a class="nav__item cta {% if menuItem.link == page.pageId %}nav__item-active{% endif %}" href="/{{ page.lang }}/{{ menuItem.link }}">{{ menuItem.title }}</a>
 	{% endfor %}
 
 	<div class="header__language-selector">
