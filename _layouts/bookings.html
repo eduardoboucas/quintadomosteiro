@@ -2,38 +2,15 @@
 layout: page
 ---
 <div class="page page--margin constrain content-holder">
+	<div class="booking-type-card">
+		<img src="/assets/images/house-illustration-full-house.png">
+		<h2 class="heading heading--2">{{ site.data[page.lang].house-layout.title }}</h2>
+
+		<div class="booking-type-card__features">
+			{{ site.data[page.lang].house-layout.features | markdownify }}
+		</div>
+	</div>	
 	<p>
-		{% case page.lang %}
-			{% when 'en' %}
-				The guesthouse is available for reservations in one of three options, with a minimum stay of two nights.
-			{% else %}
-				A Quinta do Mosteiro está disponível para ser reservada numa de três modalidades, com uma estadia mínima de duas noites.
-		{% endcase %}
+		{{ site.data[page.lang].house-layout.footer | replace: "@email@", site.email }}
 	</p>
-
-	<div class="booking-type-cards">
-		{% include booking-type.html type="full-house" price=300 %}
-		{% include booking-type.html type="first-floor" price=200 %}
-		{% include booking-type.html type="ground-floor" price=150 %}
-	</div>
-
-	<p>
-		{% case page.lang %}
-			{% when 'en' %}
-				All the options include access to:
-			{% else %}
-				Todas as modalidades oferecem acesso a:
-		{% endcase %}
-	</p>
-
-	{{ site.data[page.lang].house-layout.shared | markdownify }}
-
-	<p>
-		{% case page.lang %}
-			{% when 'en' %}
-				Until our online booking system is in place, please send us your booking request <a href="mailto:{{ site.email }}">by e-mail</a> or phone (+351 939 702 265), indicating the check-in and check-out dates, the number of guests and any special requests.
-			{% else %}
-				Até o nosso sistema de reservas online entrar em funcionamento, queira por favor contactar-nos <a href="mailto:{{ site.email }}">via e-mail</a> ou telefone (+351 939 702 265), indicando as datas de check-in e check-out, o número de hóspedes e eventuais pedidos especiais.
-		{% endcase %}
-	</p>	
 </div>

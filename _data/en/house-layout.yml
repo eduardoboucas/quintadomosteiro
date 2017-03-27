@@ -1,57 +1,26 @@
-ground-floor:
-  title: "Ground floor"
-  features: >
-    - 2 x double bedroom with private bathroom
-  
-    - Reception/game room with fireplace
-  
-    - Lounge
-  
-    - Kitchen
-  
-    - Restroom
+intro: "Quinta do Mosteiro is available for reservations with a minimum stay of two nights."
+title: "Layout and features"
+features: >
+  - 3 x double bedroom with private bathroom
 
-first-floor:
-  title: "First floor"
-  features: >
-    - 1 x double bedroom with private bathroom
-  
-    - 1 x double bedroom
-  
-    - 1 x twin room (2 single beds)
-  
-    - Bathroom
-  
-    - Living/dining room with fireplace
-  
-    - Kitchen
-  
-    - Terrace
+  - 1 x double bedroom
 
-full-house:
-  title: "Full house"
-  features: >
-    - 3 x double bedroom with private bathroom
+  - 1 x twin room (2 single beds)
 
-    - 1 x double bedroom
+  - Reception/game room with fireplace
 
-    - 1 x twin room (2 single beds)
+  - Lounge
 
-    - Reception/game room with fireplace
+  - 2 x Kitchen
 
-    - Lounge
+  - 2 x Bathroom
 
-    - 2 x Kitchen
+  - Living/dining room with fireplace
 
-    - 2 x Bathroom
+  - Main dining room with fireplace
 
-    - Living/dining room with fireplace
+  - Terrace
 
-    - Main dining room with fireplace
-
-    - Terrace
-
-shared: >
   - Swimming pool
   
   - Gardens
@@ -67,7 +36,4 @@ shared: >
   - Wi-Fi
   
   - Car park
-
-i18n:
-  night: "night"
-  price: "Price"
+footer: "Please send us your booking request <a href=\"mailto:@email@\">by e-mail</a> or phone (+351 939 702 265), indicating the check-in and check-out dates, the number of guests and any special requests. We look forward to welcoming you!"
