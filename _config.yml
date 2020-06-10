@@ -4,6 +4,7 @@ description:
     pt: "Ponte da Barca, Portugal"
     en: "Ponte da Barca, Portugal"
 baseurl: ""
+phone_number: +351 916 524 180
 url: "https://quintadomosteiro.net"
 cdn_url: ""
 markdown: kramdown
