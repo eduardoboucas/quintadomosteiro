@@ -11,6 +11,6 @@ layout: page
 		</div>
 	</div>	
 	<p>
-		{{ site.data[page.lang].house-layout.footer | replace: "@email@", site.email }}
+		{{ site.data[page.lang].house-layout.footer | replace: "@email@", site.email | replace: "@phone_number@", site.phone_number }}
 	</p>
 </div>
