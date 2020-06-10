@@ -36,4 +36,4 @@ features: >
   - Wi-Fi
   
   - Car park
-footer: "Please send us your booking request <a href=\"mailto:@email@\">by e-mail</a> or phone (+351 939 702 265), indicating the check-in and check-out dates, the number of guests and any special requests. We look forward to welcoming you!"
+footer: "Please send us your booking request <a href=\"mailto:@email@\">by e-mail</a> or phone (@phone_number@), indicating the check-in and check-out dates, the number of guests and any special requests. We look forward to welcoming you!"
