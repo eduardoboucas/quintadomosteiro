@@ -5,6 +5,10 @@
 	max-width: 760px;
 	margin-left: auto;
 	margin-right: auto;
+
+	@include media('>=medium') {
+		padding-bottom: 160px;
+	}	
 }
 
 .property-page__image {
